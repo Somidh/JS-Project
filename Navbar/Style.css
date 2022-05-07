@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap%27');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background: hsl(210, 36%, 96%);
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+
+}
+nav{
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+.nav-toggle{
+    font-size: 1.5em;
+    color: hsl(205, 78%, 60%);
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.nav-toggle:hover{
+    color:hsl(205, 86%, 17%);
+    transform: rotate(90deg);
+}
+.logo{
+    height: 40px;
+}
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+} 
+.show-links{
+    height: 10em;
+}
+.links a{
+    color:hsl(209, 34%, 30%);
+    font-size: 1em;
+    text-transform: capitalize;
+    letter-spacing: .1em;
+    display: block;
+    padding: .5em 1em;
+    transition: all 0.3s linear;
+}
+.links a:hover{
+    background: hsl(205, 86%, 81%);
+    color: hsl(205, 78%, 60%);
+    padding-left: 1.5em;
+}
+
+.social-icons{
+    display: none;
+}
+
+@media screen and (min-width: 800px){
+    .nav-center{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header{
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .links{
+        display: flex;
+    }
+    .links a{
+        padding: 0;
+        margin: 0 .5rem;
+    }
+    .links a:hover{
+        padding: 0;
+        background: transparent;
+    }
+    .social-icons{
+        display: flex;
+    }
+    .social-icons a{
+        margin: 0 .5rem;
+        color:hsl(205, 78%, 60%);
+        transition:all 0.3s linear;
+    }
+    .social-icons a:hover{
+        color: hsl(205, 90%, 76%);
+    }
+}
