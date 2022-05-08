@@ -84,6 +84,7 @@ nav{
     }
     .links{
         display: flex;
+        height: auto;
     }
     .links a{
         padding: 0;
